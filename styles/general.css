@@ -1,0 +1,108 @@
+/* NORMALIZACIÓN */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* HEADER */
+header{
+    background-color: ghostwhite; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0.5%;
+}
+header h2{
+    color: lightsalmon; 
+    font-family: 'Roboto', sans-serif;
+}
+header nav{
+    border: 2px solid gray; 
+    align-items: center; 
+    font-family: 'Roboto', sans-serif;
+}
+header nav ul{
+    height: 50%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 10px;
+    list-style: none; 
+    padding: 5px;
+}
+header nav ul li a{
+  text-decoration: none; 
+  color: black;
+  font-size: 18px;
+}
+
+header nav ul li a:hover{
+  text-decoration: none; 
+  color: lightsalmon;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  transition: all 0.2s linear;  
+}
+
+header a{
+  text-decoration: none; 
+  color: lightsalmon;
+  font-size: 25px; 
+}
+
+
+/* FOOTER */
+footer{
+  background-color: grey; 
+  color: white; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center; 
+  height: 50px;
+}
+footer div{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+footer div div{
+  background-color: rgb(243, 149, 113, 0.5); 
+  color: white;
+  margin: 5%;
+  padding: 5% 7%;
+  gap: 20%;
+  border-radius: 3px;
+}
+footer div div:hover{
+  background-color: rgb(247, 210, 210);   
+}
+
+footer div div a{
+  color: white
+}
+footer div div a:hover{  
+  color: black
+}
+
+footer p{
+  margin: auto;
+}
+footer i{
+  margin: auto;
+}
+
+
+
+
+
+

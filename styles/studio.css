@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+main {
+  width: 100vw;
+  min-height: auto;  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Passions Conflict', cursive;
+  width: 90%;
+  height: 100%;
+  padding: 40px;
+}
+
+/* IMAGEN ANCLA */
+.container_boceto {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.boceto {
+  width: 80%;
+}
+
+.container_contenido{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+}
+
+.container_contenido ul li{
+  list-style: none;
+}
+.container_contenido h3{
+  padding: 15px;  
+}
+.container_contenido h3:hover{
+  color: lightsalmon;
+  transform: skewY(3deg);
+}
+.container_contenido ul li:hover{
+  font-size: 18px;
+  color: lightsalmon;
+  padding: 5px;
+  transform: translate(5px, -5px);
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+hr{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* GALERIA DE IMAGENES */
+.grid-container {
+  width: 90vw;
+  min-height: 400px;
+  display: grid;
+  padding: 2%;
+  gap: 1%;  
+}
+
+.grid-container--fill {
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
+}
+
+.flip-container {
+  background-color: transparent;  
+  border: 1px solid #ccc;
+  perspective: 1000px;
+}
+
+.grid-element {
+  background-color: lightsalmon;
+  padding: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.front {
+  background-color: black;
+  color: #fff;
+  text-shadow:
+    0 0 5px #FFF,
+    0 0 10px #FFF,
+    0 0 15px #FFF,
+    0 0 20px lightsalmon,
+    0 0 30px lightsalmon,
+    0 0 40px lightsalmon,
+    0 0 55px lightsalmon,
+    0 0 75px lightsalmon;
+  animation: flicker 1s infinite;  
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon, 0 0 40px lightsalmon, 0 0 55px lightsalmon, 0 0 75px lightsalmon;
+  }
+
+  20% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon
+  }
+
+  40% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon, 0 0 40px lightsalmon, 0 0 55px lightsalmon, 0 0 75px lightsalmon;
+  }
+
+  50% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon, 0 0 40px lightsalmon, 0 0 55px lightsalmon, 0 0 75px lightsalmon;
+  }
+
+  80% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon, 0 0 40px lightsalmon
+  }
+
+  100% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px lightsalmon, 0 0 30px lightsalmon, 0 0 40px lightsalmon, 0 0 55px lightsalmon, 0 0 75px lightsalmon;
+  }
+}
+
+.back {
+  background-color: gray;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.diseño {
+  width: 100%;
+}
