@@ -2,7 +2,7 @@
 
 main {
   width: 100vw;
-  min-height: auto;  
+  min-height: auto;
 }
 
 .container {
@@ -22,42 +22,48 @@ main {
   flex-direction: row;
   justify-content: center;
 }
+
 .boceto {
   width: 80%;
 }
 
-.container_contenido{
+.container_contenido {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;  
+  align-items: flex-start;
 }
 
-.container_contenido ul li{
+.container_contenido ul li {
   list-style: none;
 }
-.container_contenido h3{
-  padding: 15px;  
+
+.container_contenido h3 {
+  padding: 15px;
 }
-.container_contenido h3:hover{
+
+.container_contenido h3:hover {
   color: lightsalmon;
   transform: skewY(3deg);
 }
-.container_contenido ul li:hover{
+
+.container_contenido ul li:hover {
   font-size: 18px;
   color: lightsalmon;
   padding: 5px;
   transform: translate(5px, -5px);
 }
-.titulo{
+
+.titulo {
   display: flex;
   justify-content: center;
   font-size: 25px;
   margin-top: 20px;
+  font-family: 'Passions Conflict', cursive;
 }
 
-hr{
+hr {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -66,20 +72,21 @@ hr{
 /* GALERIA DE IMAGENES */
 .grid-container {
   width: 90vw;
-  min-height: 400px;
+  min-height: 700px;
   display: grid;
   padding: 2%;
-  gap: 1%;  
+  gap: 1%;
 }
 
 .grid-container--fill {
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+
 }
 
 .flip-container {
-  background-color: transparent;  
+  width: 100%;
+  background-color: transparent;
   border: 1px solid #ccc;
   perspective: 1000px;
 }
@@ -96,7 +103,7 @@ hr{
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s;
+  transition: transform 1.5s;
   transform-style: preserve-3d;
   cursor: pointer;
 }
@@ -114,22 +121,35 @@ hr{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .front {
   background-color: black;
   color: #fff;
   text-shadow:
-    0 0 5px #FFF,
+    0 0 0px #000,
+    0 0 5px #000,
     0 0 10px #FFF,
     0 0 15px #FFF,
-    0 0 20px lightsalmon,
+    0 0 20px #FFF,
+    0 0 25px lightsalmon,
     0 0 30px lightsalmon,
+    0 0 35px lightsalmon,
     0 0 40px lightsalmon,
+    0 0 45px lightsalmon,
+    0 0 50px lightsalmon,
     0 0 55px lightsalmon,
-    0 0 75px lightsalmon;
-  animation: flicker 1s infinite;  
+    0 0 60px lightsalmon,
+    0 0 65px lightsalmon,
+    0 0 70px lightsalmon,
+    0 0 75px lightsalmon,
+    0 0 80px lightsalmon,
+    0 0 85px lightsalmon,
+    0 0 90px lightsalmon,
+    0 0 95px lightsalmon,
+    0 0 100px lightsalmon;
+  animation: flicker 1s infinite;
 }
 
 @keyframes flicker {
@@ -167,3 +187,5 @@ hr{
 .diseño {
   width: 100%;
 }
+
+

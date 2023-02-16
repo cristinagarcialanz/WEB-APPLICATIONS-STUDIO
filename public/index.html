@@ -18,7 +18,9 @@
 
 <body>
   <header>
-    <h2>WEB APPLICATIONS STUDIO</h2>
+    <a href="../pages/studio.html">
+      <h2>WEB APPLICATIONS STUDIO</h2>
+    </a>
 
     <nav>
       <ul>
@@ -41,31 +43,29 @@
 
     <article class="presentacion">
 
-      <img src="../img/WhatsApp.jpeg" alt="Enlace a Whatsapp">
+      <img src="./img/WhatsApp.jpeg" alt="Foto Presentación">
 
-      <h3>Diseño y Construyo Hermosas Interfases de Usuario para las mejores ideas...</h3>
+      <h3>Te invito a que conozcas mi studio de diseño y desarrollo de hermosas interfases de Usuario para las mejores
+        ideas...</h3>
 
-      <ul>
+      <ul class="lista">
         <li>Innovando en Comunicación</li>
         <li>Imagen de Marca e Identidad</li>
         <li>Estilo Unico y Vanguardista</li>
         <li>Propuesta Practica y Funcional</li>
       </ul>
 
-      <h4>¡Contáctanos!</h4>
+      <div><a href="pages/contacto.html">¡Contáctanos!</a>
+      </div>
       <h4>Comienza a posicionar tu negocio en el mundo digital</h4>
-
       <div>
-        <a>Descargar CV</a>
+        <a href="pages/sobremi.html">Ver más</a>
       </div>
-
-      <div>
-        <a>Ver más</a>
-      </div>
-
 
     </article>
+
   </section>
+
 
   <footer>
 
@@ -76,7 +76,8 @@
       <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
       <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
       <div><a target="_blank" href="mailto:cristinagarcialanz@gmail.com"><i
-            class="fa-sharp fa-solid fa-envelope"></i></a></div>
+            class="fa-sharp fa-solid fa-envelope"></i></a>
+      </div>
     </div>
 
     <p>Todos los derechos reservados por copyright 2022 <i class="fa-sharp fa-solid fa-copyright"></i></p>
@@ -84,6 +85,23 @@
     <i class="fa-solid fa-chevron-up"></i>
 
   </footer>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
 </body>
 
 </html>

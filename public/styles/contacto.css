@@ -42,3 +42,7 @@ section div>a {
 .container_contenido {  
   justify-content: center;
 }
+
+iframe{
+  min-height: 500px;
+}
