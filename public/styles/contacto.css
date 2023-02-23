@@ -1,19 +1,15 @@
 .container {
-  width: 90vw;
+  width: 98vw;
   height: 85vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;  
-  padding-top: 10px;
-  font-family: 'Passions Conflict', cursive;
-  
+  justify-content: space-evenly;   
+  padding: 10px;
+  font-family: 'Passions Conflict', cursive;  
 }
 
 .container_boceto {
-  max-width: 350px;
-  display: flex;
-  flex-direction: row;   
+  width: 27%;  
 }
 
 .boceto {
@@ -22,15 +18,20 @@
 
 section div ul{
   list-style: none;
+  padding: 10px;
 }
 section div ul li{
   margin-bottom: 5px;
 }
 
+section div>h4 {
+  text-align: center;
+}
+
 section div>a {
-  color: lightsalmon;
-  
+  color: lightsalmon;  
   border-radius: 3px;
+  margin-left: auto;
   cursor: pointer;
 }
 

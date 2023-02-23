@@ -12,7 +12,8 @@ html{
 }
 
 body {
-  width: 100vw;       
+  width: 100vw; 
+  align-items: center;      
 }
 
 /* HEADER */
